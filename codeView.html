@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height initial-scale=1.0">
+    <link href="./style/colors.css" rel="stylesheet">
+    <link href="./style/baseBody.css" rel="stylesheet">
+    <link href="./style/codeView.css" rel="stylesheet">
+    <!-- <link href="./style/highlight.css" rel="stylesheet"> -->
+    <link href="./style/dracula.css" rel="stylesheet">
+    <script src="./scripts/createCode.js"></script>
+    <script src="./scripts/highlight.min.js"></script>
+    <script src="./scripts/jszip.min.js"></script>
+    <script src="./scripts/codeView.js"></script>
+    
+</head>
+<body>
+  <div class="labels">Code</div>
+  <pre class="codeContainer">
+      <code class="code" id="pythonCode">
+          
+      </code>
+  </pre>
+  
+  <div class="labels">CSV</div> 
+  <div class="csvTableContainer" id="csv">
+      <table class="csvTable" id="csvTable">
+
+      </table>
+      
+      <div class="ButtonContainer" id="loadMoreButtonContainer" onclick="csvCodeUI()">
+        <label class="Button" for="loadMoreButtonContainer">
+            Load More
+        </label>
+        
+      </div>
+    </div> 
+    
+    <div class="ButtonContainer" id="loadMoreButtonContainer" onclick="downloadAsZIP()">
+        <label class="Button" for="loadMoreButtonContainer">
+            Export Code and Data
+        </label> 
+    </div>
+  
+</body>
+</html>

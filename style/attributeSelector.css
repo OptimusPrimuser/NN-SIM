@@ -1,0 +1,73 @@
+.selectorContainer{
+    padding: 0.5rem;
+    text-align: center;
+    max-width: 0;
+    max-height: 0;
+    font-size: 5vh;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.selectorListItem{
+    display: inline-block;
+    opacity: 1;
+    /* transition: all 2s;
+    animation: appear 1s ;
+    animation-direction: forward; */
+    margin: 0.5rem; 
+    font-size: 5vh;
+    /* transition: transform 0.5s, opacity 2s; */
+}
+
+.checkbox{
+    display: none;
+}
+
+.checboxLable{
+    padding: 0.5rem;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: var(--borderColor);
+    border-style: solid;
+
+    opacity: 1;
+    transition: all 0.5s;
+    animation: appear 0.5s ;
+    animation-direction: forward;
+}
+
+.checboxLable:hover{
+    transform: scale(1.1);
+    border-color: var(--borderColorHover);
+}
+
+.checkbox + .checboxLable::before{
+    font-family: FontAwesome;
+    font-size: 3vh;
+    display: inline-block;
+    content: "\f067";
+    transition: transform 1s ease-in-out;
+}
+
+.checkbox:checked + .checboxLable::before{
+    font-family: FontAwesome;
+    content: "\f00c";
+    transform: rotate(-360deg);
+    transition: transform 1s ease-in-out;
+}
+
+.attrDescription{
+    font-size: 3vh;
+    padding: 0.5rem;
+}
+
+.attributeListItem{
+    font-size: 3vh !important;
+}
+
+.inputOuputLable{
+    font-size: 5vh;
+    padding: 0.5rem;
+}
+

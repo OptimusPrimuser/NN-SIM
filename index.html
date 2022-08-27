@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height initial-scale=1.0">
+    <link href="./style/colors.css" rel="stylesheet">
+    <link href="./style/baseBody.css" rel="stylesheet">
+    <link href="./style/button.css" rel="stylesheet">
+    <link href="./style/infoDisplayTop.css" rel="stylesheet">
+    <link href="./style/loadDataComponents.css" rel="stylesheet">
+    <link href="./style/main.css" rel="stylesheet">
+    <link href="./style/menu.css" rel="stylesheet">
+    <link href="./style/plane.css" rel="stylesheet">
+    <link href="./style/sendData.css" rel="stylesheet">
+    <script src="./scripts/applySoftmax.js"></script>
+    <script src="./scripts/sendData.js"></script>
+    <script src="./scripts/arrayMath.js"></script>
+    <script src="./scripts/lodash.js"></script>
+    <script src="./scripts/matrixMath.js"></script>
+    <script src="./scripts/numjs.min.js"></script>
+    <script src="./scripts/gpu-browser.min.js"></script>
+    <script src="./scripts/neuralMath.js"></script>
+    <script src="./scripts/neuralNet.js"></script>
+    <script src="./scripts/connections.js"></script>
+    <script src="./scripts/buildAndTrain.js"></script>
+    <script src="./scripts/leader-line.min.js"></script>
+    <script src="./scripts/loadData.js"></script>
+    <script src="./scripts/main.js"></script> 
+    <script src="./scripts/menuLayer.js"></script> 
+    <script src="./scripts/menuNode.js"></script>
+    <script src="./scripts/nodeConfig.js"></script>  
+    <script src="./scripts/planeLayer.js"></script> 
+    <script src="./scripts/planeNode.js"></script> 
+    <script src="./scripts/utility.js"></script>
+    <script src="./scripts/zoom.js"></script> 
+    <script src="./scripts/createCode.js"></script>
+   
+    <!-- <script type="text/javascript" src="/eel.js"></script> -->
+</head>
+
+<body>
+    <!-- <div class="loadDataWindow">
+        <div class="selectorContainer">
+            <ul class="selectorList">
+                <li>
+                    <input type="checkbox"> 1
+                </li>
+            </ul>
+        </div>
+        <div class="buttonContainer">              
+            <label for="loadDataInput" class="loadData commonButton" >
+                Load Data
+                <input type="file" class="loadDataInput" id="loadDataInput" oninput="loadData()">
+            </label>
+        </div>
+    </div> -->
+    <div class="main">
+        <div class="menu">
+            <div class ="zoomContainer">
+                
+                <div class="zoomLable">
+                    Zoom
+                </div>
+                
+                <div class="zommSliderContainer">
+                    <input type="range" min="1" max="200" value="100" class="zoomSlider" id="zoom" oninput="manualZoom(this.value)" >
+                </div>
+            
+            </div>
+            
+            <div class="layerContainer">
+                <div >
+                    <!-- layer lable -->
+                    Layers
+                </div>
+                <div id="layerValue">
+                    <!-- values added via js -->
+                    2
+                </div>
+                <div>
+                    <div class="plusMinus addButton" onclick="addLayer()">
+                        <!-- icon imported from svg -->
+                    </div>
+                </div>
+                <div>
+                    <div class="plusMinus subtractButton" onclick="subtractLayer()">
+                        <!-- icon imported from svg -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="nodeContainer" id="nodeContainer">
+
+            </div>
+
+            <!-- <div class="buttonContainer">
+                <span class="build commonButton" onclick="buildNN()">
+                    Build Network
+                </span>
+            </div> -->
+            <div>
+                <input type="checkbox" id="applySoftmax" onclick="applySoftMaxEvent(this)">
+                <label for="applySoftmax">
+                    Apply softmax at output
+                </label>
+            </div>
+            <div class="buttonContainer">
+                <input type="number" id="epoch" class="parameters" placeholder="Epochs">
+                <input type="number" id="lr" class="parameters" placeholder="Learning Rate">
+                <span class="train" onclick="buildAndTrainNN()">Train</span>
+                <label for="sendDataInput" class="sendDataCoder loadData commonButton coderButton" >
+                    <a href="codeView.html" id="sendData" class="sendData" onclick="sendDataToCoder()">Send Data To Coder</a> 
+                    <!-- <input type="file" class="sendDataInput" id="sendDataInput" accept=".csv" oninput="loadData()"> -->
+                </label>
+            </div>
+    
+            
+        </div>
+        <div class="layerPlaneBase" id="layerPlaneBase">
+            <div class="trainingInfoContainer">
+                <div class="trainingInfo">
+                    
+                    <div class="displayElements">
+                        <div>
+                            Epochs
+                        </div>
+                        <span id="currentEpochs" class="displayValues">
+                            0
+                        </span>
+                    </div>
+                    
+                    <div class="displayElements">
+                        <div>
+                            Error Sum
+                        </div>
+                        <span id="errorSum" class="displayValues">
+                            0
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="layerPlane" id="layerPlane" >
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

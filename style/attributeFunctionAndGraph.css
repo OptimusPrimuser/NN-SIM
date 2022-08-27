@@ -1,0 +1,64 @@
+.attributesAndGraphs{
+    display: flex;
+    height: 50%;
+}
+
+.baseAGContainer{
+    width: 47%;
+    height: 90%;
+    margin: 1rem;
+    border-radius: 20px;
+    border-style: dotted;
+    border-color: var(--borderColor);
+    border-width: 2px;
+    overflow-y: scroll;
+    transition: all 0.5;
+} 
+.baseAGContainer:hover{
+    border-color: var(--borderColorHover);
+    transition: all 0.5;
+}
+.attributes{
+    max-height: 100%;
+}
+
+.graphs{
+    max-height: 100%;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.canvasContainer{
+    display: inline-block;
+    height: 40%;
+    width: 40%;
+    padding: 0.5rem;
+    animation-name: appearCanvas;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: var(--borderColor);
+    transition: all 0.5s;
+    margin-top: 0.5vh;
+    margin-bottom: 00.5vh;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+
+    /* padding: 1px; */
+}
+
+
+.canvasContainer:hover{
+    border-color: var(--borderColorHover) ;
+    transition: all 0.5s;
+}
+
+.graphCanvas{
+    border-radius: 5px;
+    filter: invert(1) hue-rotate(180deg);
+    background-color: aliceblue;
+    
+}
+

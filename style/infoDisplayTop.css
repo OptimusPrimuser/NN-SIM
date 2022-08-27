@@ -1,0 +1,43 @@
+.trainingInfoContainer{
+    height: 10%;
+    width: 50%;
+    background-color: cornsilk;
+    position: fixed;
+    left: 32.5vW;
+    box-shadow: 0px 5px 30px 5px rgba(0, 0, 255, .2);
+    border-style: dashed;
+    border-width: 2px;
+    border-radius: 0px 0px 9999px 9999px;
+    z-index: 10;
+}
+
+
+.trainingInfo{
+    display: flex;
+    flex-direction: row;
+    column-gap:8px;
+    width: 100%;
+    font-size: 5vh;
+    justify-content: center;
+}
+
+.displayElements{
+    text-align: center;
+    /* border-style: dotted;
+    border-width: 0px 4px 0px 0px; */
+    height: 80%;
+    transition: all 0.5s;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+}
+
+.displayElements:hover{
+    background-color: rgb(255,230,220);
+    /* transform: scale(1.2); */
+    transition: all 0.5s;
+}
+.displayValues{
+    font-family: monospace;
+    font-size: 5vh;
+    margin-top: 0.2vh;
+}

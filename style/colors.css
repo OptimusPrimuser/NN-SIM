@@ -1,0 +1,14 @@
+:root{
+    --loadDataBackground: black;
+    --nodeColor: black;
+    --fontColor: red;
+    --borderColor: rgba(255, 0, 0, 0.3); 
+    --borderColorHover: red;
+    --whiteShadowNode: rgba(149, 157, 165, 0.2) 8px 8px 12px;
+    --whiteShadowMenu: 5px 5px 20px 10px rgba(255, 255, 255, .2);
+    --borderColorMenu: red;
+    --backgroundColorBasePlane: black;
+    --backgroundColorMenu: rgba(255,255,255,0.18);
+    --plusMinusHoverBGColor: rgba(255,0,0,0.1);
+    --borderColorMenuElements: black;
+}

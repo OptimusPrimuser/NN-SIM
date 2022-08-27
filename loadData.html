@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+        <script src="./scripts/sendData.js"></script>
+        <script src="./scripts/loadData.js"></script>
+        <script src="./scripts/utility.js"></script>
+        <script src="./scripts/arrayMath.js"></script>
+        <script src="./scripts/chart.js"></script>
+        <script src="./scripts/labelFiltering.js"></script>
+        <script src="./scripts/modifyAttributes.js"></script>
+        <!-- <script src="./scripts/chart.js"></script> -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.esm.js" integrity="sha512-jUlTTDoq6IvZiinGFQetLcklithBTp8sVUkkUBEYQvYd3hwMuCTd59kAzVpJwvRTmZ2palO++nX+vKC+cK9lqg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js" integrity="sha512-Lii3WMtgA0C0qmmkdCpsG0Gjr6M0ajRyQRQSbTF6BsrVh/nhZdHpVZ76iMIPvQwz1eoXC3DmAg9K51qT5/dEVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+        
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/helpers.esm.js" integrity="sha512-DfyVRytIoS7LXOzmxSD4//oV81uwh1xV/EuK/xeh5gVJycOdBj+XTl7jeM6bcy7jiBIabR/9S2uyRL3oKKustw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+        <script src="./scripts/createGraphs.js"></script>
+        <!-- <script type="module" src="./scripts/math.js" type="text/javascript"></script> -->
+        <link href="./style/colors.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link href="./style/loadDataComponents.css" rel="stylesheet">
+        <link href="./style/button.css" rel="stylesheet">
+        <link href="./style/baseBody.css" rel="stylesheet">
+        <link href="./style/attributeSelector.css" rel="stylesheet">
+        <link href="./style/animations.css" rel="stylesheet">
+        <link href="./style/attributeFunctionAndGraph.css" rel="stylesheet">
+       
+    </head>
+    <body>
+        
+        <div class="loadDataWindow">
+            <div class="selectorContainer" id="selectorContainer" >
+                
+                <div>
+                    <div class="inputOuputLable">
+                        Select Inputs
+                    </div>
+                    <ul class="selectorList" id="selectorList-input">
+                    </ul>
+                    <div  class="inputOuputLable">
+                        Select Outputs
+                    </div>
+                    <ul class="selectorList" id="selectorList-output">
+                    </ul>
+                </div>
+                
+                <div class="attributesAndGraphs">
+                    
+                    <div class="baseAGContainer" id="attributes">
+                        
+                    </div>
+
+                    <div class="baseAGContainer" id="graphs">
+
+                    </div>
+                
+                </div>
+
+                <div class="buttonContainer" id="sendDataContianer">              
+                    <label for="sendDataInput" class="loadData commonButton" >
+                        <a href="index.html" id="sendData" class="sendData" onclick="sendDataToNN()">Send Data To NN</a> 
+                        <!--  -->
+                        <!-- <input type="file" class="sendDataInput" id="sendDataInput" accept=".csv" oninput="loadData()"> -->
+                    </label>
+                </div>
+
+            </div>
+            
+            <div class="buttonContainer" id="loadDataInputContainer">              
+                <label for="loadDataInput" class="loadData commonButton" >
+                    Load Data
+                    <input type="file" class="loadDataInput" id="loadDataInput" accept=".csv" oninput="loadData()">
+                </label>
+            </div>
+            
+            <div class="buttonContainer" id="loadDataInputContainerOneHotEncoded">              
+                <label for="loadDataInputOneHotEncoded" class="loadData commonButton" >
+                    Load Data with One Hot Encoding
+                    <input type="file" class="loadDataInput" id="loadDataInputOneHotEncoded" accept=".csv" oninput="loadDataOneHotEncoded()">
+                </label>
+            </div>
+            
+        </div>
+
+    </body>
+</html>

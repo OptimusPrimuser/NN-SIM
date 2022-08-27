@@ -1,0 +1,105 @@
+*{
+    text-align: center;
+    font-family: monospace;
+   
+}
+
+body{
+    background-color: rgb(40,42,54);
+}
+.labels{
+    color:rgb(248,248,242);
+    margin-top: 0.5vh;
+    /* margin-bottom: 1vh;  */
+    font-size: 5vh;
+    font-weight: bolder;
+    height: 7vh;
+}
+.codeContainer{
+    /* background-color: rgb(232,232,232); */
+    background-color: rgb(72,72,72);
+    display: inline-block;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    border-radius: 20px;
+    height: 34vh;
+}
+
+.code{
+    height: inherit;
+    display: inline-block;
+    overflow-y: scroll;
+    text-align: left;
+    color:rgb(248,248,242);
+}
+.csvTableContainer{
+    height: 34vh;
+    max-width: 95vw;
+    /* background-color: aquamarine; */
+    display:  inline-block;
+    border-color: azure;
+    border-width: 1px;
+    border-style: dashed;
+    border-radius: 10px;
+    overflow-y: scroll;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+.csvTable{
+    display:  inline-block;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    height: inherit;
+    max-width: inherit;
+    border-color: azure;
+    border-width: 1px;
+    border-style: dashed;
+    border-radius: 10px;
+    padding-left: 1vw;
+    
+    padding-right: 1vw;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+}
+
+.csvRow{
+    /* display: initial; */
+    display:table-row;
+    transition: all 0.5s;
+}
+.csvRow:hover{
+    transform: scale(1.01);
+    transition: all 0.5s;
+}
+
+.headCol{
+    background-color: floralwhite !important;
+}
+.csvCol{
+    padding: 1vw;
+    text-align: center;
+    border-radius: 2px;
+    background-color: wheat;
+    width: 10;
+    /* display:  table-cell; */
+}
+
+.Button{
+    color:rgb(248,248,242);
+    margin-top: 2vh;
+    border-color: rgb(248,248,242);
+    border-width: 1px;
+    border-style: dashed;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    font-weight: bolder;
+    font-size: 3vh;
+    display: inline-block;
+
+}

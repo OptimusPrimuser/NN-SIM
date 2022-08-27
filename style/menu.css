@@ -1,0 +1,181 @@
+.menu{
+    width: 20vw;
+    height: 97vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    background-color: var(--backgroundColorMenu);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 5;
+    overflow-y: scroll;
+    /* box-shadow: var(--whiteShadowMenu); */
+    border-color: var(--borderColorMenu);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 0px 10px 50px 0px;
+}
+
+
+
+.zoomSlider{
+    width: 80%;
+    margin: 2%;
+}
+
+.zommSliderContainer{
+    width: 100%;
+    text-align: center;
+}
+
+.zoomLable{
+    text-align: center;
+    font-size: 5vh;
+    width: 100%;
+}
+
+.zoomContainer{
+    padding: 1rem;
+    border-radius: 20px;
+    border-style: dotted;
+    border-color: var(--borderColorMenuElements); 
+    transition: transform 0.5s;
+}
+.zoomContainer:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+.layerContainer{
+    font-size: 6vh;
+    width: 90%;
+    padding: 0.5rem;
+    border-radius: 20px;
+    border-style: dotted;
+    border-color: var(--borderColorMenuElements); 
+    transition: transform 0.5s;
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1fr 1fr;
+    column-gap: 1vw;
+}
+
+.layerContainer:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+#layerLable{
+    /* width: 20%; */
+}
+
+#layerValue{
+    /* width: 20%; */
+    /* font-size: 6vh; */
+}
+
+.plusMinus{
+    margin: 0;
+    padding: 0;
+    border-radius: 100px;
+    border: solid grey;
+    border-width: 2px;
+    width: 90%;
+    height: 90%;
+    text-align: center;
+    transform: scale(1);
+    transition: transform 1s;
+    /* height: 8vh; */
+    /* width: 60%; */
+}
+
+.plusMinus:hover{
+    background-color: var(--plusMinusHoverBGColor);
+    /* border-width: 4px; */
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
+.addButton{
+    background-image: url('./images/add.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.subtractButton{
+    background-image: url('./images/remove.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nodeContainer{
+    max-height: 70%;
+    overflow-y: scroll;
+    padding: 0.5rem;
+    border-radius: 20px;
+    border-style: dotted;
+    border-color: black; 
+    transition: transform 0.5s;
+}
+
+.nodeContainer:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+.layerNodeContainer{
+    font-size: 3vh;
+    width: 90%;
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1fr 1fr;
+    column-gap: 0.5vw;
+}
+
+.build:hover{
+    background-image: url("./images/gears-spinning.gif");
+    transform: scale(1.2);
+    background-position: center;
+    transition: all 0.5s;
+}
+
+.parameters{
+    font-size: 3vh;
+    font-family: monospace;
+    width: 80%;
+    margin: 0.5rem;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.parameters:hover{
+    border-width: 3px;
+    border-style: dashed;
+    border-color: black;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.train{
+    font-size: 5vh;
+    width: fit-content;
+    height: fit-content;
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 20px;
+    border-style: dotted;
+    border-color: black; 
+    transition: all 0.5s;
+}
+
+.train:hover{
+    background-image: url("./images/lifting-weights-gyms.gif");
+    background-position: center;
+    background-size:contain;
+    transform: scale(1.2);
+}
+
+.coderButton{
+    border-color: var(--borderColorMenuElements) !important;
+}

@@ -1,0 +1,17 @@
+{
+  "name": "ui",
+  "version": "1.0.0",
+  "description": "Desktop App For Neural Net",
+  "main": "starter.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Rahul Sharma",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^17.4.0"
+  },
+  "devDependencies": {
+    "electron-packager": "^15.4.0"
+  }
+}
