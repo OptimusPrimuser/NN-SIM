@@ -3,15 +3,15 @@ NN-Simulator is a tool which can be used to understand how a neural network work
 Features✨✨✨ <br/>
 ⭐Data Visualizer & Manipulator<br/>
 Visualize and Manipulate Data from CSV and Modify Data according to your needs.<br/>
-    ⚙️One-Hot-Encoding<br/>
-    ⚙️Label-Encoding<br/>
-    ⚙️Min-Max<br/>
-    ⚙️Log<br/>
-    ⚙️Sigmoid<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;⚙️One-Hot-Encoding<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;⚙️Label-Encoding<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;⚙️Min-Max<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;⚙️Log<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;⚙️Sigmoid<br/>
 ⭐Neural Mapper<br/>
 Make your Architecture & try out if it works.<br/>
-    📌Increase/Decrease Layers & Nodes<br/>
-    📌Modify Epochs and Learning Rate<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;📌Increase/Decrease Layers & Nodes<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;📌Modify Epochs and Learning Rate<br/>
 ⭐Code Generator<br/>
 Generates modified CSV & Python code using Tensorflow. Code & CSV are Available as a zip<br/>
 <br/>
